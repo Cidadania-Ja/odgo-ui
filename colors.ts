@@ -18,6 +18,7 @@ const colorsSecondary40 = "#75bd7b";
 const colorsSecondary30 = "#91ca95";
 const colorsSecondary20 = "#a9d6ac";
 const colorsSecondary10 = "#cfe8d1";
+const colorsPurple100 = "#9713ff";
 
 export const Colors = {
     colorsPrimary100,
@@ -40,4 +41,5 @@ export const Colors = {
     colorsSecondary30,
     colorsSecondary20,
     colorsSecondary10,
+    colorsPurple100,
 }
