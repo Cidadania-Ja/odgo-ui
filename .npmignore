@@ -1,0 +1,12 @@
+/src/
+
+*.config.js
+tsconfig.json
+.babelrc
+.eslintrc.json
+
+/node_modules/
+
+*.log
+*.tmp
+*.bak
