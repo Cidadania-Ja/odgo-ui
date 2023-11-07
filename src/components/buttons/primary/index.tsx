@@ -1,4 +1,5 @@
-import { Button, CircularProgress } from "@mui/material";
+import { CircularProgress } from "@mui/material";
+import { StyledButton } from "./styles";
 import { PrimaryButtonOptions } from "./types";
 
 export default function PrimaryButton({
@@ -8,13 +9,13 @@ export default function PrimaryButton({
 }: PrimaryButtonOptions): JSX.Element {
   return (
     <>
-      <Button {...props}>
+      <StyledButton {...props}>
         {isLoading ? (
           <CircularProgress size={24} sx={{ color: "var(--primary-900)" }} />
         ) : (
           title
         )}
-      </Button>
+      </StyledButton>
     </>
   );
 }
