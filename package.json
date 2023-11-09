@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cidadania-Ja/odgo-ui.git"
@@ -18,14 +21,13 @@
     "react-dom": "^18.0.0",
     "styled-components": "^5.0.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.16",
-    "styled-components": "^6.1.0"
-  },
-  "devDependencies": {
+    "styled-components": "^6.1.0",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
@@ -34,7 +36,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc --w",
+    "prepublish": "mkdir -p dist/assets/ && cp -R src/assets/* dist/assets/"
   },
   "description": "ODGO UI components.",
   "bugs": {
