@@ -18,23 +18,42 @@
     "react-dom": "^18.0.0",
     "styled-components": "^5.0.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.16",
-    "styled-components": "^6.1.0"
-  },
-  "devDependencies": {
+    "styled-components": "^6.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w"
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
   },
   "description": "ODGO UI components.",
   "bugs": {
